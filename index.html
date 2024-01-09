@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+                
+    font-family: Verdana;
+    text-align: center;
+}
+form {
+    background-color: #b1758e;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+button {
+   
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Survey Form</h1>
+
+<form action="/submit_survey" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age"><br><br>
+
+  
+  <br><label for="rating">Rate your experience:</label>
+  <select name="rating" id="rating">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="6">5</option>
+</select>
+
+  
+ <br><label for="rating">Rating for performance:</label>
+  <select name="rating" id="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="6">5</option>
+  </select>
+
+ 
+ 
+  <br><label for="rating">Rating for features:</label>
+  <select name="rating" id="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="6">5</option>
+  </select>
+
+ 
+ 
+  <br><label for="rating">Rating for design:</label>
+  <select name="rating" id="rating">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="6">5</option>
+  </select><br>
+
+  <div for="feedback">Feedback:</div><br>
+  <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+
+  <label for="subscribe">Subscribe to our newsletter:</label>
+  <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
